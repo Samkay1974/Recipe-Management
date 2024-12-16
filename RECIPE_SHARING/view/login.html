@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="../assets/css/styling.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+</head>
+<body>
+    <div class="display">
+        <form action = "../actions/login.php" method="POST" id="loginForm" onsubmit="return validatePassword()">
+            <h1>Login</h1>
+
+            <div class="input-box">
+                <input type="text" id="email" name="email" placeholder="Username/Email address here" required>
+                <i class='bx bxs-user-circle'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <i class='bx bx-block'></i>
+            </div>
+            
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Remember Me</label>
+                <a href="recovery.html">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn">Start cooking</button>
+
+            <div class="register-link">
+                <p>Haven't joined yet? <a href="register.html">Register now!</a></p>
+            </div>
+
+            <p id="error" style="color: red;"></p>
+        </form>
+        <div>
+            <input type="checkbox" id="showPassword" onclick="visiblePassword()"> Show Password
+        </div>
+    </div>
+
+    <script>
+        function validatePassword() {
+            const password = document.getElementById('password').value;
+            const errorElement = document.getElementById('error');
+
+            // Regex to check the password format
+            const passwordRegex = /^(?=.*[A-Z])(?=.*[0-9]{3,})(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+
+            if (!passwordRegex.test(password)) {
+                errorElement.textContent = "Invalid password format! Check password again";
+                return false;
+            }
+
+            errorElement.textContent = '';  
+            return true;
+        }
+
+        
+        function visiblePassword() {
+            const passwordField = document.getElementById('password');
+            const showPassword = document.getElementById('showPassword');
+
+            if (showPassword.checked) {
+                passwordField.type = "text";  
+            } else {
+                passwordField.type = "password";  
+            }
+        }
+    </script>
+</body>
+</html>

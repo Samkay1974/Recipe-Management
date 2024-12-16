@@ -1,0 +1,103 @@
+body{
+
+margin: 0;
+  height: 100vh; /* Set the height to the full viewport height */
+  background: 
+    linear-gradient(to top, transparent 50%,white 50%), /* Top half with a solid color */
+    url('../images/plain.jpg') no-repeat center bottom; /* Bottom half with a background image */
+  background-size: cover;
+}
+
+
+h3{
+    font-style: Impact;
+    font-weight: 100px;
+    font-size: larger;
+}
+.card-wrapper{
+display: flex;
+flex-wrap: wrap;
+gap: 40px; 
+justify-content: center; 
+padding: 20px;
+background-color:none;
+min-height: 200px;
+}
+.card-wrapper p{
+  font-size: smaller;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.card{
+background-color:white;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  width: 300px; /* Adjust width to control card size */
+  overflow: hidden; /* Ensures content stays inside the card */
+  text-align: center;
+  transition: transform 0.2s;
+  left:0;
+
+}
+.card :hover{
+transform: scale(1.05);
+
+}
+.card img {
+    width: 100%; /* Makes the image fill the card */
+    height: 300px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+}
+.card h3 {
+    margin: 15px 0;
+    color: #333;
+}
+  
+.card p {
+    padding: 0 15px 15px;
+    color: #666;
+  }
+  .food{
+    font-weight: bold; /* Makes the text bold */
+    padding: 5px; /* Adds some space around the text */
+    border: 3px solid:blanchedalmond; /* Adds a colored border around the text */
+    display: inline-block; /* Makes sure the border wraps around the text properly */
+    color: #333; /* Set the text color */
+    border-radius: 5px; /* Adds rounded corners to the border */
+  }
+  .navigation{
+    position: absolute;
+    display: flex; 
+    justify-content: flex-end; 
+    background-color: none; 
+    background-size: 50px;
+    padding: 10px;
+    top: 20px;
+    right:0;
+    width: 50%;
+    transform: translateX(-50%)
+    
+  
+}
+.navigation a {
+    color:black; 
+    padding: 10px 15px;
+    text-decoration: none; 
+    transition: background-color 0.3s;
+    
+    
+  }
+  .navigating links.link{
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    margin-top: auto;
+}

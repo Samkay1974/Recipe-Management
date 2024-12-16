@@ -1,0 +1,158 @@
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: url('../images/all_recipes.avif') no-repeat center center fixed;
+        background-size: cover;
+        color: #f5f5f5; 
+    }
+
+    div h1 {
+        text-align: center;
+        margin-top: 20px;
+        color:whitesmoke;
+    }
+    div p{
+        text-align: center;
+        font-size: larger;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .filter-form {
+        margin: 20px auto;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.8); /* Slightly transparent background */
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .filter-form input,
+    .filter-form select,
+    .filter-form button {
+        padding: 8px;
+        margin: 5px;
+        border-radius: 5px;
+        border: 1px solid #333;
+        background: #222; /* Dark background for inputs */
+        color: #f5f5f5;
+    }
+
+    .filter-form button {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .filter-form button:hover {
+        background-color: #0056b3;
+    }
+
+    .recipe-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .recipe-card {
+        background: rgba(0, 0, 0, 0.85); /* Transparent black */
+        border: 1px solid #444;
+        border-radius: 8px;
+        padding: 15px;
+        width: 300px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .recipe-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    .recipe-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .view-btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 12px;
+        background-color: #007BFF;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .view-btn:hover {
+        background-color: #0056b3;
+    }
+
+    p {
+        margin: 5px 0;
+        color: #ccc; /* Slightly lighter color for less important text */
+    }
+
+    a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    .add-btn {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        background-color: #007BFF;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .add-btn:hover {
+        background-color: #0056b3;
+    }
+    
+.account {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        gap: 15px;
+        font-family: Arial, sans-serif;
+    }
+    
+    .account a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color:black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    }
+    
+    .account a:hover {
+        background-color: #0056b3;
+        transform: scale(1.1); /* Slight zoom effect on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+    }
+    
+    .account a:active {
+        transform: scale(1.05); 
+    }
+
+    
